@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Worker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+  <div style="display: flex;">
+
+    <div class="sidenav">
+      <br><br>
+      <a href="#Users">Users</a>
+      <a href="#Deals">Deals</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+    <div style="width: -webkit-fill-available;">
+
+      <div>
+
+        <div class="header" id="myHeader">
+          <h2>Users</h2>
+        </div>
+      </div>
+
+
+      <br><br>
+      <div class="content" style="padding-left: 10%;padding-top: 0%;">
+
+
+        <h5> Users list</h5>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search via User Id" name="search"><button type="submit"><i
+                class="fa fa-search"></i></button>
+          </form>
+
+        </div>
+        <br>
+        <table class="center">
+          <tr>
+            <th>User ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Delete</th>
+            <th>View</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>mmk@gmail.com</td>
+            <td><button class="btn"><i class="fa fa-trash"></i></button></td>
+            <td><button class="btn"><i class="fa fa-eye"></i></button></td>
+
+          </tr>
+        </table>
+        
+        <hr>
+        <br>
+
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a class="active" href="#">1</a>
+          <a href="file:///C:/Users/MMK/Desktop/yaken%20kar%20admin/UsersList2.html">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
+
+
+<style>
+  .search-container {
+    float: none;
+  }
+
+  .search-container button:hover {
+    background: #ccc;
+  }
+
+  .search-container button {
+    float: none;
+    /* display: block; */
+    text-align: left;
+    border-width: none;
+    border-color: #818181;
+    margin: 0;
+  }
+
+  .sidenav {
+
+    width: 160px;
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  /* Style the header */
+  .header {
+    padding: 10px 16px;
+    background: #111;
+    color: #f1f1f1;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .btn:hover {
+    color: rgb(225, 65, 65);
+  }
+
+  .content {
+    max-width: 1100px;
+    margin: auto;
+
+  }
+
+  .textalignment {
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+
+  .input {
+    margin-left: 50px;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+
+
+  /* Clear floats after the columns */
+  table {
+    width: 80%;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid rgb(53, 52, 52);
+    border-collapse: collapse;
+
+    text-align: center;
+
+
+  }
+
+  th {
+
+    background-color: #f8f2f2;
+    height: 10px;
+  }
+</style>
